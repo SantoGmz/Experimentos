@@ -1,0 +1,49 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+3
+6
+nombre
+2
+''
+4
+edad
+1
+0
+4
+sexo
+2
+''
+4
+1
+29
+'Por favor, Digite su nombre'
+5
+1
+6
+nombre
+4
+1
+16
+'Digite su edad'
+5
+1
+4
+edad
+4
+1
+27
+'M= Masculino, F= Femenino'
+5
+1
+4
+sexo
+4
+1
+67
+'Hola señor ' ,nombre, ', Su edad es ' ,edad, ', Su sexo es ' ,sexo
+1

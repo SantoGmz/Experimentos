@@ -1,0 +1,43 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+2
+6
+FechaA
+1
+0
+6
+FechaN
+1
+0
+4
+1
+22
+'Ingrese fecha actual'
+5
+1
+6
+fechaA
+4
+1
+30
+'Ingrese Fecha De nacimiento '
+5
+1
+6
+FechaN
+6
+1
+4
+edad
+13
+FechaA-FechaN
+4
+1
+20
+'Su edad es; ' ,edad
+1
