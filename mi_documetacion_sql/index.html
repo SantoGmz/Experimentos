@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Documentacion SQL</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+
+
+
+#indice{
+    background: lightgrey;
+box-shadow: 0px 0px 2.5px orange;
+}
+
+#contenido{
+    background: #efefef; 
+    text-align: justify;
+box-shadow: 0px 0px 2.5px red;
+}
+
+#indice a {
+    color:orange;
+}
+
+#indice a:hover {
+color:red;
+text-decoration: aqua;
+}
+
+#_clase_de_usuarios li {
+    color: red;
+}
+
+li{
+    text-decoration: none;
+    color: orange;
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Mi Documentacion SQL</h2>
+        <div class="row">
+
+            <nav class="col" id="indice"> <h5>Indice</h5> 
+            <ul>
+                <li class="list-group-item"> <a href="#_dato">Dato</a> </li>
+                <li class="list-group-item"> <a href="#_informacion">Informacion </a> </li>
+                <li class="list-group-item"> <a href="#_base_de_datos">Base de datos </a> </li>
+                <li class="list-group-item"> <a href="#_servidor_de_base_de_datos"> Servidor de base de datos</a> </li>
+                <li class="list-group-item"> <a href="#_gestor_de_base_de_datos"> Gestor de base de datos</a> </li>
+                <li class="list-group-item"><a href="#_clase_de_usuarios">Clase de usuarios </a></li>
+                <li class="list-group-item"><a href="#_esquemas_de_base_de_datos"> Esquemas de base de datos</a></li>
+                <li class="list-group-item"> <a href=""> </a> </li>
+                <li class="list-group-item"><a href=""> </a></li>
+                <li class="list-group-item"><a href=""> </a></li>
+                
+            </ul>
+            </nav>
+
+            <section class="col" id="contenido">
+                <article id="_dato" >               
+                    <h5>Dato:</h5>
+                    <p> <em>  Son la representacion simboloca 
+                        ya sea mediante numeros o letras de 
+                        una recopilacion de informacion la cual
+                         puede ser cualitativa o cuantitativa
+
+                         Se usan para proveer informacion 
+                         por si solos no tienen sentido. </em>
+                 </p> 
+                </article>
+
+                <!--/Informacion/ -->
+                <article id="_informacion">
+                    <h5>informacion</h5>
+                    <p><em> Son un cojunto de datos entrelazados 
+                        mediante conectores linguisticos para 
+                        formar una idea o fenicion.</em></p>
+                </article>
+
+                <!--/Base de datos/ -->
+                <article id="_base_de_datos">
+                    <h5>Base De Datos</h5>
+                        <p><em> Es un cojunto de datos pertenecientes 
+                            a un mismo contexto y almacenados sistematicamente
+                            para su posterior uso.</em>
+                    </p>
+                </article>
+
+                <!--/ / -->
+                <article id="_servidor_de_base_de_datos ">
+                    <h5>Servidor de base de datos</h5>
+                    <p><em>son los que se utilizan para los gestores dede base de datos
+                        y que varios usuarios hagan varias operaciones sobre ellas el mismo tiempo,
+                        situados en lugares diferentes.
+                        Se puedeacceder a ellas mediante terminales o equipos con programas llamado cliente
+                    </em></p>
+                </article>
+
+                <article id="_gestor_de_base_de_datos">
+                    <h5>Gestores De Base De Datos</h5>
+                    <p>
+                        <em>
+                        Son un conjunto de programas que manejan todo acceso a la base de esta, el 
+                        usuario yl as aplicaciones utilizadas </em>
+                    </p>
+                </article>
+
+                <article id="_clase_de_usuarios">
+                    <h5>Clases de usuarios</h5>
+                    <p>
+                        <em>
+                            <li>Usuarios normales</li>
+                            <li>Programadores de aplicaciones</li>
+                            <li>Usuarios sofisticados</li>
+                            <li>Administradores de base de datos</li>
+                
+                        </em>
+                    </p>
+                </article>
+
+                <article id="_esquemas_de_base_de_datos">
+                    <h5>Esquemas De Base De Datos</h5>
+                    <p>
+                        <em>
+                        Representa la configuracion logica de todo o parte
+                        de una base de dato racional.
+                        Puede existir de dos formas:Como representacion 
+                        integridad que controlan una base de datos.
+                        Estas formulas se expresan en un lenguale de definicion de datos.
+                        Tal como SQL (Structured Query Language)
+
+                        Como parte de un diccionario de datos, Un esquema indica como las
+                        entiendas que conforman la base de datos se relacionan entre si,
+                        incluidas las tablas, las vistasm los procedimientos almacenados y muchos mas.</em>
+                    </p>
+                </article>
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>EDAD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>01</td> 
+                            <td>Santos</td> 
+                            <td>18</td> 
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Jose</td>
+                            <td>25</td>
+                        </tr>
+
+                    </tbody>
+
+
+                </table>
+
+
+            </section>
+         </div>
+    </div>
+
+</body>
+</html>
