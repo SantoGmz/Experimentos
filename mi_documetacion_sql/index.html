@@ -4,189 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mi Documentacion SQL</title>
+    <title>index</title>
     <link rel="stylesheet" href="bootstrap.css">
-    <style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
 
-
-
-#indice{
-    background: lightgrey;
-    box-shadow: 0px 0px 2.5px orange;
-    text-align: justify;
-    margin: 5px;
-}
-
-#contenido{
-    background: #efefef; 
-    text-align: justify;
-box-shadow: 0px 0px 2.5px red;
-}
-
-#indice a {
-    color:orange;
-}
-
-#indice a:hover {
-color:red;
-text-decoration: aqua;
-}
-
-#_clase_de_usuarios li {
-    color: red;
-}
-
-li{
-    text-decoration: none;
-    color: orange;
-    
-}
-
-.logo{
-    position: fixed;
-    right: -80px;
-    bottom: 485px;
-    width: 20%;
-
-}
-
-
-
-    </style>
 </head>
 <body>
+    <!--Cabecera de la (paginadiv#header)-->
+    <header>
+<nav class="navbar navbar-light bg-danger">
+<a class="navbar-brand text-light " href="#"> Navbar <i class="fas fa-grin-tongue"></i></a>
+        </nav>
+    </header>
+
+    <!--Una secion de la pagina (div#section)-->
+    <section>
 
 
+    </section>
 
-    <div class="container">
-        <h2>Mi Documentacion SQL</h2>
-        <div class="row">
-            
+    <!--Contenido principal (div#main)-->
+    <main>
 
-            <nav class="col-md-3" id="indice"> <h5>Indice</h5> 
-            <ul>
-                <li class="list-group-item"> <a href="#_dato">Dato</a> </li>
-                <li class="list-group-item"> <a href="#_informacion">Informacion </a> </li>
-                <li class="list-group-item"> <a href="#_base_de_datos">Base de datos </a> </li>
-                <li class="list-group-item"> <a href="#_servidor_de_base_de_datos"> Servidor de base de datos</a> </li>
-                <li class="list-group-item"> <a href="#_gestor_de_base_de_datos"> Gestor de base de datos</a> </li>
-                <li class="list-group-item"><a href="#_clase_de_usuarios">Clase de usuarios </a></li>
-                <li class="list-group-item"><a href="#_esquemas_de_base_de_datos"> Esquemas de base de datos</a></li>
-                
-            </ul>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">¿Que es forma la DB?</h5>
+                    <p class="card-text">Breve descripcion de lo que es: '<em> base de datos</em>'</p>
+                    <a class="btn btn-danger text-light" href="intro.html">ir al intro</a>
 
-            </nav>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Conocer MDL</h5>
+                    <p class="card-text">En esta parte conoceras que es <em>MDL</em></p>
+                    <a class="btn btn-danger text-light" href="intro.html">ir a MDL</a>
 
-            <section class="col" id="contenido">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Conoser DDL</h5>
+                    <p class="card-text">En esta parte conoceras que es <em>DDL</em></p>
+                    <a class="btn btn-danger text-light" href="intro.html">ir a DDL</a>
 
-                <article id="_dato" >    
-        <img src="santos.png" class="logo"  alt="logo">
+                </div>
+            </div>
+        </div>
 
-                    <h5>Dato:</h5>
-                    <p> <em>  Son la representacion simboloca 
-                        ya sea mediante numeros o letras de 
-                        una recopilacion de informacion la cual
-                         puede ser cualitativa o cuantitativa
-
-                         Se usan para proveer informacion 
-                         por si solos no tienen sentido. </em>
-                 </p> 
-                </article>
-
-                <!--/Informacion/ -->
-                <article id="_informacion">
-                    <h5>informacion</h5>
-                    <p><em> Son un cojunto de datos entrelazados 
-                        mediante conectores linguisticos para 
-                        formar una idea o fenicion.</em></p>
-                </article>
-
-
-                <!--/Base de datos/ -->
-                <article id="_base_de_datos">
-                    <h5>Base De Datos</h5>
-                        <p><em> Es un cojunto de datos pertenecientes 
-                            a un mismo contexto y almacenados sistematicamente
-                            para su posterior uso.</em>
-                    </p>
-                </article>
-
-                <!--/Servidor de base de datos/ -->
-                <article id="_servidor_de_base_de_datos ">
-                    <h5>Servidor de base de datos</h5>
-                    <p><em>son los que se utilizan para los gestores dede base de datos
-                        y que varios usuarios hagan varias operaciones sobre ellas el mismo tiempo,
-                        situados en lugares diferentes.
-                        Se puedeacceder a ellas mediante terminales o equipos con programas llamado cliente
-                    </em></p>
-                </article>
-
-                <article id="_gestor_de_base_de_datos">
-                    <h5>Gestores De Base De Datos</h5>
-                    <p>
-                        <em>
-                        Son un conjunto de programas que manejan todo acceso a la base de esta, el 
-                        usuario yl as aplicaciones utilizadas </em>
-                    </p>
-                </article>
-
-                <article id="_clase_de_usuarios">
-                    <h5>Clases de usuarios</h5>
-                    <p>
-                        <em>
-                            <li>Usuarios normales</li>
-                            <li>Programadores de aplicaciones</li>
-                            <li>Usuarios sofisticados</li>
-                            <li>Administradores de base de datos</li>
-                
-                        </em>
-                    </p>
-                </article>
-
-                <article id="_esquemas_de_base_de_datos">
-                    <h5>Esquemas De Base De Datos</h5>
-                    <p>
-                        <em>
-                        Representa la configuracion logica de todo o parte
-                        de una base de dato racional.
-                        Puede existir de dos formas:Como representacion 
-                        integridad que controlan una base de datos.
-                        Estas formulas se expresan en un lenguale de definicion de datos.
-                        Tal como SQL (Structured Query Language)
-
-                        Como parte de un diccionario de datos, Un esquema indica como las
-                        entiendas que conforman la base de datos se relacionan entre si,
-                        incluidas las tablas, las vistasm los procedimientos almacenados y muchos mas.</em>
-                    </p>
-                </article>
-                <table class="table table-hover table-dark ">
-                    <thead>
-                        <tr>
-                        <th>ID</th>
-                        <th>NOMBRE</th>
-                        <th>EDAD</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>01</td> 
-                            <td>Cristian</td> 
-                            <td>23</td> 
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>pedro</td>
-                            <td>55</td>
-                        </tr>
-
-                    </tbody>
-
-
-                </table>
-
-
-            </section>
-         </div>
     </div>
+    </main>
 
+    <!--Pie de pagina (div#foorter)-->
+<footer></footer>
+    
+    
 </body>
 </html>
