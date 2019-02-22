@@ -55,7 +55,7 @@ namespace ProyectoSanto
             //Tipos de datos booleanos
             bool estaCasado = false;
             bool poseetarjetacredito;
-
+            ////////////////////////////////////////////////////////////////////////////////
              
 
 
@@ -64,5 +64,59 @@ namespace ProyectoSanto
 
 
         }
+
+
+        private void textBoxPantalla_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnpunto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsuma_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnresta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

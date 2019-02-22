@@ -44,16 +44,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="diasemana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diasemana.Designer.cs">
+      <DependentUpon>diasemana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expresionesoperadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expresionesoperadores.Designer.cs">
+      <DependentUpon>Expresionesoperadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.cs">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="diasemana.resx">
+      <DependentUpon>diasemana.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
