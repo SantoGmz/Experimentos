@@ -30,13 +30,14 @@
         {
             this.btncal = new System.Windows.Forms.Button();
             this.btnseman = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncal
             // 
             this.btncal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncal.Location = new System.Drawing.Point(102, 78);
-            this.btncal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncal.Margin = new System.Windows.Forms.Padding(4);
             this.btncal.Name = "btncal";
             this.btncal.Size = new System.Drawing.Size(100, 34);
             this.btncal.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             this.btnseman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnseman.Location = new System.Drawing.Point(70, 120);
-            this.btnseman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnseman.Margin = new System.Windows.Forms.Padding(4);
             this.btnseman.Name = "btnseman";
             this.btnseman.Size = new System.Drawing.Size(155, 34);
             this.btnseman.TabIndex = 1;
@@ -56,17 +57,30 @@
             this.btnseman.UseVisualStyleBackColor = true;
             this.btnseman.Click += new System.EventHandler(this.btnseman_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(70, 162);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 41);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Operadores";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(306, 232);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnseman);
             this.Controls.Add(this.btncal);
             this.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Chartreuse;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "inicio";
             this.Text = "inicio";
             this.TransparencyKey = System.Drawing.Color.Red;
@@ -79,5 +93,6 @@
 
         private System.Windows.Forms.Button btncal;
         private System.Windows.Forms.Button btnseman;
+        private System.Windows.Forms.Button button1;
     }
 }

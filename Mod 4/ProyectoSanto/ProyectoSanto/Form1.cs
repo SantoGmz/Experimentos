@@ -73,39 +73,39 @@ namespace ProyectoSanto
 
         private void btn7_Click(object sender, EventArgs e)
         {
-
+            textBoxPantalla.Text = textBoxPantalla.Text + "7";
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-
+            textBoxPantalla.Text = textBoxPantalla.Text + "8";
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-
+            textBoxPantalla.Text = textBoxPantalla.Text + "4";
         }
 
 
 
         private void btn6_Click(object sender, EventArgs e)
         {
-
+            textBoxPantalla.Text = textBoxPantalla.Text + "6";
         }
 
         private void btncero_Click(object sender, EventArgs e)
         {
-
+            textBoxPantalla.Text = textBoxPantalla.Text + "0";
         }
 
         private void btnpunto_Click(object sender, EventArgs e)
         {
-
+            textBoxPantalla.Text = textBoxPantalla.Text + ".";
         }
 
         private void btnsuma_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnresta_Click(object sender, EventArgs e)
@@ -115,8 +115,37 @@ namespace ProyectoSanto
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            textBoxPantalla.Text = textBoxPantalla.Text + "1"; 
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            textBoxPantalla.Text = textBoxPantalla.Text + "2";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            textBoxPantalla.Text = textBoxPantalla.Text + "3";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            textBoxPantalla.Text = textBoxPantalla.Text + "5";
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            textBoxPantalla.Text = textBoxPantalla.Text + "9";
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //OBTENER EL VALOR DE LA TECLA PRESIONADA
+                MessageBox.Show("El codigo interno es: " + e.KeyChar);
+
+            }
 
         }
         
     }
-}
+

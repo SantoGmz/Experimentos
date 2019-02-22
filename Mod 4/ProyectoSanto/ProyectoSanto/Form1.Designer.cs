@@ -117,6 +117,7 @@
             this.btn5.TabIndex = 1;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn2
             // 
@@ -126,6 +127,7 @@
             this.btn2.TabIndex = 1;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn9
             // 
@@ -135,6 +137,7 @@
             this.btn9.TabIndex = 1;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn3
             // 
@@ -144,6 +147,7 @@
             this.btn3.TabIndex = 1;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btnpunto
             // 
@@ -227,6 +231,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

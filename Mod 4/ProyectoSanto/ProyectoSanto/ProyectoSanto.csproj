@@ -73,6 +73,9 @@
     <EmbeddedResource Include="diasemana.resx">
       <DependentUpon>diasemana.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Expresionesoperadores.resx">
+      <DependentUpon>Expresionesoperadores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
