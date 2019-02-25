@@ -299,6 +299,11 @@ namespace ProyectoSanto
                 case 57: //num 9
                 textBoxPantalla.Text = textBoxPantalla.Text + "9";
                 break;
+                default:// Por defecto se ejecuta esto
+                    //codigo
+                break;
+
+
 
 
 
