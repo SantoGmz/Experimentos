@@ -44,6 +44,7 @@
             this.btnresta = new System.Windows.Forms.Button();
             this.btnsuma = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
+            this.buttonclear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxPantalla
@@ -93,7 +94,7 @@
             // 
             this.btncero.Location = new System.Drawing.Point(12, 214);
             this.btncero.Name = "btncero";
-            this.btncero.Size = new System.Drawing.Size(130, 44);
+            this.btncero.Size = new System.Drawing.Size(62, 44);
             this.btncero.TabIndex = 1;
             this.btncero.Text = "0";
             this.btncero.UseVisualStyleBackColor = true;
@@ -207,11 +208,23 @@
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
+            // buttonclear
+            // 
+            this.buttonclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonclear.Location = new System.Drawing.Point(81, 215);
+            this.buttonclear.Name = "buttonclear";
+            this.buttonclear.Size = new System.Drawing.Size(61, 43);
+            this.buttonclear.TabIndex = 3;
+            this.buttonclear.Text = "C";
+            this.buttonclear.UseVisualStyleBackColor = true;
+            this.buttonclear.Click += new System.EventHandler(this.buttonclear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(295, 277);
+            this.Controls.Add(this.buttonclear);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btnsuma);
             this.Controls.Add(this.btnpunto);
@@ -228,10 +241,12 @@
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.textBoxPantalla);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,6 +270,7 @@
         private System.Windows.Forms.Button btnresta;
         private System.Windows.Forms.Button btnsuma;
         private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button buttonclear;
 
     }
 }

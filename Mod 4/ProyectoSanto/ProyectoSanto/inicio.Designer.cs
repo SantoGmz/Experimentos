@@ -36,7 +36,7 @@
             // btncal
             // 
             this.btncal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncal.Location = new System.Drawing.Point(102, 78);
+            this.btncal.Location = new System.Drawing.Point(129, 109);
             this.btncal.Margin = new System.Windows.Forms.Padding(4);
             this.btncal.Name = "btncal";
             this.btncal.Size = new System.Drawing.Size(100, 34);
@@ -48,7 +48,7 @@
             // btnseman
             // 
             this.btnseman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnseman.Location = new System.Drawing.Point(70, 120);
+            this.btnseman.Location = new System.Drawing.Point(97, 151);
             this.btnseman.Margin = new System.Windows.Forms.Padding(4);
             this.btnseman.Name = "btnseman";
             this.btnseman.Size = new System.Drawing.Size(155, 34);
@@ -61,7 +61,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(70, 162);
+            this.button1.Location = new System.Drawing.Point(97, 193);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 41);
             this.button1.TabIndex = 2;
@@ -74,17 +74,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(306, 232);
+            this.ClientSize = new System.Drawing.Size(351, 323);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnseman);
             this.Controls.Add(this.btncal);
             this.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Chartreuse;
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inicio";
             this.TransparencyKey = System.Drawing.Color.Red;
             this.Deactivate += new System.EventHandler(this.inicio_Deactivate);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.inicio_KeyUp);
             this.ResumeLayout(false);
 
         }

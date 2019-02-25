@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace ProyectoSanto
 {
@@ -141,9 +142,180 @@ namespace ProyectoSanto
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
             //OBTENER EL VALOR DE LA TECLA PRESIONADA
-                MessageBox.Show("El codigo interno es: " + e.KeyChar);
+              /*  MessageBox.Show("El codigo interno es: " + e.KeyChar); */
+
+            //Mostrar por consola de programador el valor de la tecla presionada
+           
 
             }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+
+            //Mostrar por consola de programador el valor de la tecla presionada
+            Trace.WriteLine("la tecla presionada es: " + e.KeyValue);
+
+            /*
+            if(e.KeyValue == 96 ) //0
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "0";
+            }
+            else if (e.KeyValue == 97 || e.KeyValue == 49)//1
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "1";
+            }
+            else if (e.KeyValue == 98 || e.KeyValue == 50)//2
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "2";
+            }
+            else if (e.KeyValue == 99 || e.KeyValue == 51)//3
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "3";
+            }
+            else if (e.KeyValue == 100 || e.KeyValue == 52)//4
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "4";
+            }
+            else if (e.KeyValue == 101 || e.KeyValue == 53) //5
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "5";
+            }
+            else if (e.KeyValue == 102 || e.KeyValue == 54) //6
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "6";
+            }
+            else if (e.KeyValue == 103 || e.KeyValue == 55)//7
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "7";
+            }
+            else if (e.KeyValue == 104 || e.KeyValue == 56)//8
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "8";
+            }
+            else if (e.KeyValue == 105 || e.KeyValue == 56)//9
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "9";
+            }
+            else if (e.KeyValue == 105 || e.KeyValue == 57)//9
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "9";
+            }
+            else if (e.KeyValue == 107)//+
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "+";
+            }
+            else if (e.KeyValue == 109)//-
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "-";
+            }
+            else if (e.KeyValue == 106)//*
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "*";
+            }
+            else if (e.KeyValue == 111)// /
+            {
+                textBoxPantalla.Text = textBoxPantalla.Text + "/";
+            } if (e.KeyValue == 8)// BORRAR
+            {
+                textBoxPantalla.Text = "";
+            }
+            */
+
+            switch (e.KeyValue)
+            { //NumPad
+                case 96: //num 0
+                textBoxPantalla.Text = textBoxPantalla.Text + "0";
+                break;
+                case 97: //num 1
+                textBoxPantalla.Text = textBoxPantalla.Text + "1";
+                break;
+                case 98: //num 2
+                textBoxPantalla.Text = textBoxPantalla.Text + "2";
+                break;
+                case 99: //num 3
+                textBoxPantalla.Text = textBoxPantalla.Text + "3";
+                break;
+                case 100: //num 4
+                textBoxPantalla.Text = textBoxPantalla.Text + "4";
+                break;
+                case 101: //num 5
+                textBoxPantalla.Text = textBoxPantalla.Text + "5";
+                break;
+                case 102: //num 6
+                textBoxPantalla.Text = textBoxPantalla.Text + "6";
+                break;
+                case 103: //num 7
+                textBoxPantalla.Text = textBoxPantalla.Text + "7";
+                break;
+                case 104: //num 8
+                textBoxPantalla.Text = textBoxPantalla.Text + "8";
+                break;
+                case 105: //num 9
+                textBoxPantalla.Text = textBoxPantalla.Text + "9";
+                break;
+                case 107: //operacion +
+                textBoxPantalla.Text = textBoxPantalla.Text + "+";
+                break;
+                case 109: //operacion -
+                textBoxPantalla.Text = textBoxPantalla.Text + "-";
+                break;
+                case 106: //operacion *
+                textBoxPantalla.Text = textBoxPantalla.Text + "*";
+                break;
+                case 111: //operacion /
+                textBoxPantalla.Text = textBoxPantalla.Text + "/";
+                break;
+                case 67: //operacion clear
+                textBoxPantalla.Text = "";
+                break;
+                ////////////---Other_teclado---////////////
+                case 48: //num 0
+                textBoxPantalla.Text = textBoxPantalla.Text + "0";
+                break;
+                case 49: //num 1
+                textBoxPantalla.Text = textBoxPantalla.Text + "1";
+                break;
+                case 50: //num 2
+                textBoxPantalla.Text = textBoxPantalla.Text + "2";
+                break;
+                case 51: //num 3
+                textBoxPantalla.Text = textBoxPantalla.Text + "3";
+                break;
+                case 52: //num 4
+                textBoxPantalla.Text = textBoxPantalla.Text + "4";
+                break;
+                case 53: //num 5
+                textBoxPantalla.Text = textBoxPantalla.Text + "5";
+                break;
+                case 54: //num 6
+                textBoxPantalla.Text = textBoxPantalla.Text + "6";
+                break;
+                case 55: //num 7
+                textBoxPantalla.Text = textBoxPantalla.Text + "7";
+                break;
+                case 56: //num 8
+                textBoxPantalla.Text = textBoxPantalla.Text + "8";
+                break;
+                case 57: //num 9
+                textBoxPantalla.Text = textBoxPantalla.Text + "9";
+                break;
+
+
+
+            }
+
+
+
+
+        }
+
+        private void buttonclear_Click(object sender, EventArgs e)
+        {
+
+            textBoxPantalla.Text = "";
+            
+
+        }
 
         }
         
