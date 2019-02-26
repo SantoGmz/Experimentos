@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ciclos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos.Designer.cs">
+      <DependentUpon>Ciclos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos2.Designer.cs">
+      <DependentUpon>Ciclos2.cs</DependentUpon>
+    </Compile>
     <Compile Include="diasemana.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ciclos.resx">
+      <DependentUpon>Ciclos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos2.resx">
+      <DependentUpon>Ciclos2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="diasemana.resx">
       <DependentUpon>diasemana.cs</DependentUpon>
     </EmbeddedResource>

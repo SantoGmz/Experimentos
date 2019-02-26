@@ -31,15 +31,17 @@
             this.btncal = new System.Windows.Forms.Button();
             this.btnseman = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonCiclos = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncal
             // 
             this.btncal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncal.Location = new System.Drawing.Point(129, 109);
+            this.btncal.Location = new System.Drawing.Point(97, 109);
             this.btncal.Margin = new System.Windows.Forms.Padding(4);
             this.btncal.Name = "btncal";
-            this.btncal.Size = new System.Drawing.Size(100, 34);
+            this.btncal.Size = new System.Drawing.Size(155, 34);
             this.btncal.TabIndex = 0;
             this.btncal.Text = "Calculadora";
             this.btncal.UseVisualStyleBackColor = true;
@@ -69,12 +71,37 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonCiclos
+            // 
+            this.buttonCiclos.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonCiclos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCiclos.ForeColor = System.Drawing.Color.White;
+            this.buttonCiclos.Location = new System.Drawing.Point(97, 240);
+            this.buttonCiclos.Name = "buttonCiclos";
+            this.buttonCiclos.Size = new System.Drawing.Size(155, 38);
+            this.buttonCiclos.TabIndex = 3;
+            this.buttonCiclos.Text = "Ciclos";
+            this.buttonCiclos.UseVisualStyleBackColor = false;
+            this.buttonCiclos.Click += new System.EventHandler(this.buttonCiclos_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(97, 70);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(155, 32);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(351, 323);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonCiclos);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnseman);
             this.Controls.Add(this.btncal);
@@ -98,5 +125,7 @@
         private System.Windows.Forms.Button btncal;
         private System.Windows.Forms.Button btnseman;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCiclos;
+        private System.Windows.Forms.Button button2;
     }
 }

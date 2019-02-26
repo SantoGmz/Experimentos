@@ -45,5 +45,15 @@ namespace ProyectoSanto
                 this.Close();
             }
         }
+
+        private void buttonCiclos_Click(object sender, EventArgs e)
+        {
+            new Ciclos2().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new registro().Show();
+        }
     }
 }

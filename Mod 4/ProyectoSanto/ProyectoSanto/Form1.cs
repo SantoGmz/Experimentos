@@ -20,88 +20,104 @@ namespace ProyectoSanto
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //lugar donde se almacena informacin que cambia
-            /*var edad = 23;
-            MessageBox.Show("Su edad es: " + edad);
-            edad = 15;
-            MessageBox.Show("Su edad es: " + edad);
-             */
-            //
             /*
-            const int impuesto = 18;
-            MessageBox.Show("Su impuesto es: " + impuesto);
-            impuesto = 21;
-            MessageBox.Show("Su impuesto es: " + impuesto);
-            */
+              lugar donde se almacena informacin que cambia
+              var edad = 23;
+              MessageBox.Show("Su edad es: " + edad);
+              edad = 15;
+              MessageBox.Show("Su edad es: " + edad);
+   
+              const int impuesto = 18;
+              MessageBox.Show("Su impuesto es: " + impuesto);
+              impuesto = 21;
+              MessageBox.Show("Su impuesto es: " + impuesto);
+           
 
-            //tipos de datos numericos
-                int dia = 7;
-             // float porciento = 0.54;
-              double herencia = 54545454545454;
-              byte numerobyte = 1 ;
-              short numeroshort2 = 255; //Convert.Toin16
+              tipos de datos numericos
+                  int dia = 7;
+               float porciento = 0.54;
+                double herencia = 54545454545454;
+                byte numerobyte = 1 ;
+                short numeroshort2 = 255; //Convert.Toin16
 
-              int numeroInt= 1; //Conver.Toint32
+                int numeroInt= 1; //Conver.Toint32
               
-              long numerolong = 9223372036854775807  ;//Convert.ToInt64
-              long numerolong2 = 9223372036854775804;
+                long numerolong = 9223372036854775807  ;//Convert.ToInt64
+                long numerolong2 = 9223372036854775804;
               
-            //Tipos de datos String
-            char caracter = '@'; 
-            string nacionalidad = "Cristian Nunez";
+              Tipos de datos String
+              char caracter = '@'; 
+              string nacionalidad = "Cristian Nunez";
 
-            //char simbolo '@'; //Incorrecto
-            //string nacionalidad = 'Dominicano'; //Incorrecto
+              char simbolo '@'; //Incorrecto
+              string nacionalidad = 'Dominicano'; //Incorrecto
         
-            //Tipos de datos booleanos
-            bool estaCasado = false;
-            bool poseetarjetacredito;
-            ////////////////////////////////////////////////////////////////////////////////
-             
+              Tipos de datos booleanos
+              bool estaCasado = false;
+              bool poseetarjetacredito;
+              ////////////////////////////////////////////////////////////////////////////////
+
+              */
 
 
 
 
+        }
+
+        //Funcion para agregar texto en textbox
+        private void agregartxt(string texto)
+        {
+            Trace.WriteLine("Este codigo es de la funcion");
+            //string texto = "1";
+            //textBoxPantalla.Text = textBoxPantalla.Text
+            textBoxPantalla.Text += texto;
+           // textBoxPantalla.Text = textBoxPantalla.Text + texto;
 
 
+            
         }
 
 
         private void textBoxPantalla_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "7";
+            //textBoxPantalla.Text = textBoxPantalla.Text + "7";
+            agregartxt("7");
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "8";
+            //textBoxPantalla.Text = textBoxPantalla.Text + "8";
+            agregartxt("8");
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "4";
+          //  textBoxPantalla.Text = textBoxPantalla.Text + "4";
+            agregartxt("4");
         }
-
 
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "6";
+            agregartxt("6");
+            //textBoxPantalla.Text = textBoxPantalla.Text + "6";
         }
 
         private void btncero_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "0";
+            //textBoxPantalla.Text = textBoxPantalla.Text + "0";
+            agregartxt("0");
         }
 
         private void btnpunto_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + ".";
+            //textBoxPantalla.Text = textBoxPantalla.Text + ".";
+            agregartxt(".");
         }
 
         private void btnsuma_Click(object sender, EventArgs e)
@@ -116,27 +132,31 @@ namespace ProyectoSanto
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "1"; 
+            agregartxt("1");
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "2";
+            //textBoxPantalla.Text = textBoxPantalla.Text + "2"; 
+            agregartxt("2");
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "3";
+            agregartxt("3");
+            //textBoxPantalla.Text = textBoxPantalla.Text + "3";
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "5";
+            //textBoxPantalla.Text = textBoxPantalla.Text + "5";
+            agregartxt("5");
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            textBoxPantalla.Text = textBoxPantalla.Text + "9";
+           // textBoxPantalla.Text = textBoxPantalla.Text + "9";
+            agregartxt("9");
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
@@ -151,6 +171,10 @@ namespace ProyectoSanto
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
 
             //Mostrar por consola de programador el valor de la tecla presionada
             Trace.WriteLine("la tecla presionada es: " + e.KeyValue);
