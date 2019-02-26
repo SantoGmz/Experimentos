@@ -16,7 +16,7 @@ namespace ProyectoSanto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ciclos());
+            Application.Run(new registro());
         }
     }
 }
