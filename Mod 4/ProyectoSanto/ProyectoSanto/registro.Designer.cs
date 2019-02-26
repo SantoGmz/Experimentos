@@ -84,7 +84,7 @@
             // lblcorreo
             // 
             this.lblcorreo.AutoSize = true;
-            this.lblcorreo.Location = new System.Drawing.Point(11, 161);
+            this.lblcorreo.Location = new System.Drawing.Point(19, 156);
             this.lblcorreo.Name = "lblcorreo";
             this.lblcorreo.Size = new System.Drawing.Size(38, 13);
             this.lblcorreo.TabIndex = 3;
@@ -93,7 +93,7 @@
             // lbluser
             // 
             this.lbluser.AutoSize = true;
-            this.lbluser.Location = new System.Drawing.Point(22, 207);
+            this.lbluser.Location = new System.Drawing.Point(22, 200);
             this.lbluser.Name = "lbluser";
             this.lbluser.Size = new System.Drawing.Size(43, 13);
             this.lbluser.TabIndex = 4;
@@ -102,7 +102,7 @@
             // lblpasswd
             // 
             this.lblpasswd.AutoSize = true;
-            this.lblpasswd.Location = new System.Drawing.Point(16, 232);
+            this.lblpasswd.Location = new System.Drawing.Point(12, 239);
             this.lblpasswd.Name = "lblpasswd";
             this.lblpasswd.Size = new System.Drawing.Size(61, 13);
             this.lblpasswd.TabIndex = 5;
@@ -110,28 +110,28 @@
             // 
             // textBoxnombre
             // 
-            this.textBoxnombre.Location = new System.Drawing.Point(36, 50);
+            this.textBoxnombre.Location = new System.Drawing.Point(59, 50);
             this.textBoxnombre.Name = "textBoxnombre";
             this.textBoxnombre.Size = new System.Drawing.Size(100, 20);
             this.textBoxnombre.TabIndex = 6;
             // 
             // textBoxapellido
             // 
-            this.textBoxapellido.Location = new System.Drawing.Point(36, 89);
+            this.textBoxapellido.Location = new System.Drawing.Point(59, 88);
             this.textBoxapellido.Name = "textBoxapellido";
             this.textBoxapellido.Size = new System.Drawing.Size(100, 20);
             this.textBoxapellido.TabIndex = 7;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(36, 174);
+            this.textBox4.Location = new System.Drawing.Point(59, 173);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 9;
             // 
             // textBoxuser
             // 
-            this.textBoxuser.Location = new System.Drawing.Point(83, 218);
+            this.textBoxuser.Location = new System.Drawing.Point(59, 216);
             this.textBoxuser.Name = "textBoxuser";
             this.textBoxuser.Size = new System.Drawing.Size(100, 20);
             this.textBoxuser.TabIndex = 10;
@@ -153,7 +153,7 @@
             // lblpasswd2
             // 
             this.lblpasswd2.AutoSize = true;
-            this.lblpasswd2.Location = new System.Drawing.Point(25, 281);
+            this.lblpasswd2.Location = new System.Drawing.Point(13, 280);
             this.lblpasswd2.Name = "lblpasswd2";
             this.lblpasswd2.Size = new System.Drawing.Size(94, 13);
             this.lblpasswd2.TabIndex = 13;
@@ -169,7 +169,7 @@
             // lblgenero
             // 
             this.lblgenero.AutoSize = true;
-            this.lblgenero.Location = new System.Drawing.Point(25, 321);
+            this.lblgenero.Location = new System.Drawing.Point(281, 32);
             this.lblgenero.Name = "lblgenero";
             this.lblgenero.Size = new System.Drawing.Size(42, 13);
             this.lblgenero.TabIndex = 15;
@@ -178,7 +178,7 @@
             // rbsexohombre
             // 
             this.rbsexohombre.AutoSize = true;
-            this.rbsexohombre.Location = new System.Drawing.Point(28, 353);
+            this.rbsexohombre.Location = new System.Drawing.Point(284, 64);
             this.rbsexohombre.Name = "rbsexohombre";
             this.rbsexohombre.Size = new System.Drawing.Size(62, 17);
             this.rbsexohombre.TabIndex = 16;
@@ -189,7 +189,7 @@
             // rbsexomujer
             // 
             this.rbsexomujer.AutoSize = true;
-            this.rbsexomujer.Location = new System.Drawing.Point(28, 377);
+            this.rbsexomujer.Location = new System.Drawing.Point(284, 88);
             this.rbsexomujer.Name = "rbsexomujer";
             this.rbsexomujer.Size = new System.Drawing.Size(71, 17);
             this.rbsexomujer.TabIndex = 17;
@@ -200,7 +200,7 @@
             // lblpais
             // 
             this.lblpais.AutoSize = true;
-            this.lblpais.Location = new System.Drawing.Point(28, 401);
+            this.lblpais.Location = new System.Drawing.Point(284, 112);
             this.lblpais.Name = "lblpais";
             this.lblpais.Size = new System.Drawing.Size(27, 13);
             this.lblpais.TabIndex = 18;
@@ -209,7 +209,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(31, 417);
+            this.comboBox1.Location = new System.Drawing.Point(287, 128);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 19;
@@ -217,7 +217,7 @@
             // lblestado
             // 
             this.lblestado.AutoSize = true;
-            this.lblestado.Location = new System.Drawing.Point(31, 445);
+            this.lblestado.Location = new System.Drawing.Point(287, 156);
             this.lblestado.Name = "lblestado";
             this.lblestado.Size = new System.Drawing.Size(40, 13);
             this.lblestado.TabIndex = 20;
@@ -226,7 +226,7 @@
             // comboBoxestado
             // 
             this.comboBoxestado.FormattingEnabled = true;
-            this.comboBoxestado.Location = new System.Drawing.Point(31, 461);
+            this.comboBoxestado.Location = new System.Drawing.Point(287, 172);
             this.comboBoxestado.Name = "comboBoxestado";
             this.comboBoxestado.Size = new System.Drawing.Size(121, 21);
             this.comboBoxestado.TabIndex = 21;
@@ -234,7 +234,7 @@
             // checkBoxterminos
             // 
             this.checkBoxterminos.AutoSize = true;
-            this.checkBoxterminos.Location = new System.Drawing.Point(38, 488);
+            this.checkBoxterminos.Location = new System.Drawing.Point(294, 199);
             this.checkBoxterminos.Name = "checkBoxterminos";
             this.checkBoxterminos.Size = new System.Drawing.Size(121, 17);
             this.checkBoxterminos.TabIndex = 22;
@@ -243,7 +243,7 @@
             // 
             // buttonsave
             // 
-            this.buttonsave.Location = new System.Drawing.Point(31, 521);
+            this.buttonsave.Location = new System.Drawing.Point(287, 232);
             this.buttonsave.Name = "buttonsave";
             this.buttonsave.Size = new System.Drawing.Size(75, 23);
             this.buttonsave.TabIndex = 23;
@@ -252,7 +252,7 @@
             // 
             // buttonclear
             // 
-            this.buttonclear.Location = new System.Drawing.Point(108, 521);
+            this.buttonclear.Location = new System.Drawing.Point(364, 232);
             this.buttonclear.Name = "buttonclear";
             this.buttonclear.Size = new System.Drawing.Size(75, 23);
             this.buttonclear.TabIndex = 24;
@@ -263,7 +263,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 652);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(568, 336);
             this.Controls.Add(this.buttonclear);
             this.Controls.Add(this.buttonsave);
             this.Controls.Add(this.checkBoxterminos);
@@ -289,7 +291,8 @@
             this.Controls.Add(this.lblapellido);
             this.Controls.Add(this.lblnombre);
             this.Name = "registro";
-            this.Text = "registro";
+            this.Text = "Registro";
+            this.Load += new System.EventHandler(this.registro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

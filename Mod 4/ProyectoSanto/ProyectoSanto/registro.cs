@@ -16,5 +16,11 @@ namespace ProyectoSanto
         {
             InitializeComponent();
         }
+
+        private void registro_Load(object sender, EventArgs e)
+        {
+            ///Crear otro con usuario, Contraseña
+            ///botones iniciar secion y crear cuenta
+        }
     }
 }
