@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registro));
             this.lblnombre = new System.Windows.Forms.Label();
             this.lblapellido = new System.Windows.Forms.Label();
             this.lblfecha = new System.Windows.Forms.Label();
@@ -52,6 +53,8 @@
             this.checkBoxterminos = new System.Windows.Forms.CheckBox();
             this.buttonsave = new System.Windows.Forms.Button();
             this.buttonclear = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblnombre
@@ -286,13 +289,24 @@
             this.buttonclear.Text = "Limpiar";
             this.buttonclear.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(260, 307);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 102);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(568, 446);
+            this.ClientSize = new System.Drawing.Size(500, 446);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonclear);
             this.Controls.Add(this.buttonsave);
             this.Controls.Add(this.checkBoxterminos);
@@ -317,9 +331,12 @@
             this.Controls.Add(this.lblfecha);
             this.Controls.Add(this.lblapellido);
             this.Controls.Add(this.lblnombre);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "registro";
             this.Text = "Registrar";
             this.Load += new System.EventHandler(this.registro_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,5 +368,6 @@
         private System.Windows.Forms.CheckBox checkBoxterminos;
         private System.Windows.Forms.Button buttonsave;
         private System.Windows.Forms.Button buttonclear;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

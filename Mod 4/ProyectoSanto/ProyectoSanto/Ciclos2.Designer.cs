@@ -94,6 +94,7 @@
             this.Controls.Add(this.textBoxFor);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.Info;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Ciclos2";
             this.Text = "Ciclo Repetir";
             this.Load += new System.EventHandler(this.Ciclos_Load);

@@ -275,6 +275,7 @@
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.textBoxPantalla);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";

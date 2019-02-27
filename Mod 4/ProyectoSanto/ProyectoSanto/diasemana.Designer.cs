@@ -157,6 +157,7 @@
             this.Controls.Add(this.textBoxdia);
             this.Controls.Add(this.bntver);
             this.Font = new System.Drawing.Font("High Tower Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "diasemana";
             this.Text = "Dia de la semana";
             this.Load += new System.EventHandler(this.diasemana_Load);

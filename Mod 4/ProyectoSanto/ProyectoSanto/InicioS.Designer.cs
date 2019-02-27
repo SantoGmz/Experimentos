@@ -138,6 +138,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbluser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "InicioS";
             this.Text = "Inicie sesion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
