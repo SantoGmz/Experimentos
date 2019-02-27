@@ -49,8 +49,9 @@
             // 
             // textBoxPantalla
             // 
-            this.textBoxPantalla.BackColor = System.Drawing.Color.White;
+            this.textBoxPantalla.BackColor = System.Drawing.Color.Snow;
             this.textBoxPantalla.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPantalla.ForeColor = System.Drawing.Color.Black;
             this.textBoxPantalla.Location = new System.Drawing.Point(12, 12);
             this.textBoxPantalla.Multiline = true;
             this.textBoxPantalla.Name = "textBoxPantalla";
@@ -62,6 +63,8 @@
             // 
             // btn7
             // 
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn7.ForeColor = System.Drawing.Color.Snow;
             this.btn7.Location = new System.Drawing.Point(12, 64);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(62, 44);
@@ -72,6 +75,8 @@
             // 
             // btn4
             // 
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.ForeColor = System.Drawing.Color.Snow;
             this.btn4.Location = new System.Drawing.Point(12, 114);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(62, 44);
@@ -82,6 +87,8 @@
             // 
             // btn1
             // 
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.ForeColor = System.Drawing.Color.Snow;
             this.btn1.Location = new System.Drawing.Point(12, 164);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(62, 44);
@@ -92,6 +99,8 @@
             // 
             // btncero
             // 
+            this.btncero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncero.ForeColor = System.Drawing.Color.Snow;
             this.btncero.Location = new System.Drawing.Point(12, 214);
             this.btncero.Name = "btncero";
             this.btncero.Size = new System.Drawing.Size(62, 44);
@@ -102,6 +111,8 @@
             // 
             // btn8
             // 
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn8.ForeColor = System.Drawing.Color.Snow;
             this.btn8.Location = new System.Drawing.Point(80, 64);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(62, 44);
@@ -112,6 +123,8 @@
             // 
             // btn5
             // 
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn5.ForeColor = System.Drawing.Color.Snow;
             this.btn5.Location = new System.Drawing.Point(80, 114);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(62, 44);
@@ -122,6 +135,8 @@
             // 
             // btn2
             // 
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.ForeColor = System.Drawing.Color.Snow;
             this.btn2.Location = new System.Drawing.Point(80, 164);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(62, 44);
@@ -132,6 +147,8 @@
             // 
             // btn9
             // 
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn9.ForeColor = System.Drawing.Color.Snow;
             this.btn9.Location = new System.Drawing.Point(148, 64);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(62, 44);
@@ -142,6 +159,8 @@
             // 
             // btn3
             // 
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.ForeColor = System.Drawing.Color.Snow;
             this.btn3.Location = new System.Drawing.Point(148, 164);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(62, 44);
@@ -152,6 +171,8 @@
             // 
             // btnpunto
             // 
+            this.btnpunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpunto.ForeColor = System.Drawing.Color.Snow;
             this.btnpunto.Location = new System.Drawing.Point(148, 214);
             this.btnpunto.Name = "btnpunto";
             this.btnpunto.Size = new System.Drawing.Size(62, 44);
@@ -162,6 +183,8 @@
             // 
             // btndiv
             // 
+            this.btndiv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndiv.ForeColor = System.Drawing.Color.Snow;
             this.btndiv.Location = new System.Drawing.Point(216, 64);
             this.btndiv.Name = "btndiv";
             this.btndiv.Size = new System.Drawing.Size(62, 44);
@@ -171,6 +194,8 @@
             // 
             // btnmult
             // 
+            this.btnmult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmult.ForeColor = System.Drawing.Color.Snow;
             this.btnmult.Location = new System.Drawing.Point(216, 114);
             this.btnmult.Name = "btnmult";
             this.btnmult.Size = new System.Drawing.Size(62, 44);
@@ -180,6 +205,8 @@
             // 
             // btnresta
             // 
+            this.btnresta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresta.ForeColor = System.Drawing.Color.Snow;
             this.btnresta.Location = new System.Drawing.Point(216, 164);
             this.btnresta.Name = "btnresta";
             this.btnresta.Size = new System.Drawing.Size(62, 44);
@@ -190,6 +217,8 @@
             // 
             // btnsuma
             // 
+            this.btnsuma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsuma.ForeColor = System.Drawing.Color.Snow;
             this.btnsuma.Location = new System.Drawing.Point(216, 214);
             this.btnsuma.Name = "btnsuma";
             this.btnsuma.Size = new System.Drawing.Size(62, 44);
@@ -200,6 +229,8 @@
             // 
             // btn6
             // 
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn6.ForeColor = System.Drawing.Color.Snow;
             this.btn6.Location = new System.Drawing.Point(149, 115);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(61, 43);
@@ -210,7 +241,9 @@
             // 
             // buttonclear
             // 
+            this.buttonclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonclear.ForeColor = System.Drawing.Color.Snow;
             this.buttonclear.Location = new System.Drawing.Point(81, 215);
             this.buttonclear.Name = "buttonclear";
             this.buttonclear.Size = new System.Drawing.Size(61, 43);
@@ -223,6 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(295, 277);
             this.Controls.Add(this.buttonclear);
             this.Controls.Add(this.btn6);

@@ -38,6 +38,7 @@
             // btncal
             // 
             this.btncal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncal.ForeColor = System.Drawing.Color.White;
             this.btncal.Location = new System.Drawing.Point(97, 109);
             this.btncal.Margin = new System.Windows.Forms.Padding(4);
             this.btncal.Name = "btncal";
@@ -49,20 +50,23 @@
             // 
             // btnseman
             // 
+            this.btnseman.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnseman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnseman.ForeColor = System.Drawing.Color.White;
             this.btnseman.Location = new System.Drawing.Point(97, 151);
             this.btnseman.Margin = new System.Windows.Forms.Padding(4);
             this.btnseman.Name = "btnseman";
             this.btnseman.Size = new System.Drawing.Size(155, 34);
             this.btnseman.TabIndex = 1;
             this.btnseman.Text = "Dia De Semana";
-            this.btnseman.UseVisualStyleBackColor = true;
+            this.btnseman.UseVisualStyleBackColor = false;
             this.btnseman.Click += new System.EventHandler(this.btnseman_Click);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(97, 193);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 41);
@@ -73,7 +77,7 @@
             // 
             // buttonCiclos
             // 
-            this.buttonCiclos.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonCiclos.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonCiclos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCiclos.ForeColor = System.Drawing.Color.White;
             this.buttonCiclos.Location = new System.Drawing.Point(97, 240);
@@ -86,11 +90,13 @@
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(97, 70);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 32);
             this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
+            this.button2.Text = "Inicio Session";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -98,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(351, 323);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonCiclos);

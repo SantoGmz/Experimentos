@@ -42,6 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(96, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
@@ -57,6 +58,8 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(109, 151);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -69,7 +72,7 @@
             // 
             this.lblsaludo.AutoSize = true;
             this.lblsaludo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsaludo.ForeColor = System.Drawing.Color.Red;
+            this.lblsaludo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblsaludo.Location = new System.Drawing.Point(81, 47);
             this.lblsaludo.Name = "lblsaludo";
             this.lblsaludo.Size = new System.Drawing.Size(121, 24);
@@ -92,6 +95,8 @@
             // 
             // btncal
             // 
+            this.btncal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncal.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btncal.Location = new System.Drawing.Point(234, 225);
             this.btncal.Name = "btncal";
             this.btncal.Size = new System.Drawing.Size(75, 23);
@@ -103,6 +108,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(23, 210);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
@@ -112,6 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(127, 210);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
@@ -122,6 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(356, 261);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

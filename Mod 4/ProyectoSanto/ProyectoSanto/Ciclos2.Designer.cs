@@ -31,10 +31,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxFor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(84, 95);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
@@ -59,16 +62,40 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Digita un numero";
             // 
-            // Ciclos
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(235, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Digite un numero y se reperita las veces digitada";
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(244, 236);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(41, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "v1";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Ciclos2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(286, 260);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxFor);
             this.Controls.Add(this.button1);
-            this.Name = "Ciclos";
-            this.Text = "Ciclos";
+            this.ForeColor = System.Drawing.SystemColors.Info;
+            this.Name = "Ciclos2";
+            this.Text = "Ciclo Repetir";
             this.Load += new System.EventHandler(this.Ciclos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -80,5 +107,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxFor;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
     }
 }

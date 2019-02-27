@@ -35,7 +35,7 @@ namespace ProyectoSanto
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            new Expresionesoperadores().Show();
         }
 
         private void inicio_KeyUp(object sender, KeyEventArgs e)
@@ -53,7 +53,7 @@ namespace ProyectoSanto
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new registro().Show();
+            new InicioS().Show();
         }
     }
 }

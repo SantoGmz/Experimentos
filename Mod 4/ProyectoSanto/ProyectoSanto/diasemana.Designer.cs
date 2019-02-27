@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(diasemana));
             this.bntver = new System.Windows.Forms.Button();
             this.textBoxdia = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,19 +41,21 @@
             // 
             // bntver
             // 
-            this.bntver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bntver.BackgroundImage")));
-            this.bntver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bntver.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntver.Location = new System.Drawing.Point(113, 79);
+            this.bntver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bntver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntver.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.bntver.Location = new System.Drawing.Point(59, 79);
             this.bntver.Name = "bntver";
-            this.bntver.Size = new System.Drawing.Size(59, 34);
+            this.bntver.Size = new System.Drawing.Size(194, 34);
             this.bntver.TabIndex = 0;
+            this.bntver.Text = "Generar";
             this.bntver.UseVisualStyleBackColor = true;
             this.bntver.Click += new System.EventHandler(this.bntver_Click);
             // 
             // textBoxdia
             // 
-            this.textBoxdia.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxdia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxdia.Location = new System.Drawing.Point(59, 41);
             this.textBoxdia.Multiline = true;
             this.textBoxdia.Name = "textBoxdia";
@@ -64,30 +65,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(56, 128);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(56, 129);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 16);
+            this.label1.Size = new System.Drawing.Size(42, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Sexo";
             // 
             // textBoxsexo
             // 
-            this.textBoxsexo.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxsexo.Location = new System.Drawing.Point(99, 128);
+            this.textBoxsexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxsexo.Location = new System.Drawing.Point(59, 150);
             this.textBoxsexo.MaxLength = 1;
             this.textBoxsexo.Multiline = true;
             this.textBoxsexo.Name = "textBoxsexo";
-            this.textBoxsexo.Size = new System.Drawing.Size(82, 20);
+            this.textBoxsexo.Size = new System.Drawing.Size(194, 32);
             this.textBoxsexo.TabIndex = 3;
             this.textBoxsexo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonverificar
             // 
-            this.buttonverificar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonverificar.Location = new System.Drawing.Point(81, 165);
+            this.buttonverificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonverificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonverificar.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonverificar.Location = new System.Drawing.Point(59, 188);
             this.buttonverificar.Name = "buttonverificar";
-            this.buttonverificar.Size = new System.Drawing.Size(127, 31);
+            this.buttonverificar.Size = new System.Drawing.Size(194, 31);
             this.buttonverificar.TabIndex = 4;
             this.buttonverificar.Text = "Verificar";
             this.buttonverificar.UseVisualStyleBackColor = true;
@@ -96,36 +100,44 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(122, 22);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(56, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 16);
+            this.label2.Size = new System.Drawing.Size(30, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "Dia";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 248);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(59, 256);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(194, 26);
             this.textBox1.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(99, 229);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(56, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 14);
+            this.label3.Size = new System.Drawing.Size(167, 18);
             this.label3.TabIndex = 7;
             this.label3.Text = "Escribe tu genero F o M";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(102, 275);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(59, 288);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(194, 30);
             this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
+            this.button1.Text = "Generar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -133,8 +145,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(379, 358);
+            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ClientSize = new System.Drawing.Size(349, 358);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);

@@ -56,8 +56,8 @@ namespace ProyectoSanto
 
         private void sumar(double numero1, double numero2)
         {
-            MessageBox.Show("El numero1 es: " + numero1);
-            MessageBox.Show("El numero2 es: " + numero2);
+           // MessageBox.Show("El numero1 es: " + numero1);
+          //  MessageBox.Show("El numero2 es: " + numero2);
         }
 
         private void bntver_Click(object sender, EventArgs e)
