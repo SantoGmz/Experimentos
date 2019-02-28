@@ -37,6 +37,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonform = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bntver
@@ -141,12 +143,37 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonform
+            // 
+            this.buttonform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonform.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonform.Location = new System.Drawing.Point(290, 36);
+            this.buttonform.Name = "buttonform";
+            this.buttonform.Size = new System.Drawing.Size(123, 34);
+            this.buttonform.TabIndex = 9;
+            this.buttonform.Text = "MostrarDias";
+            this.buttonform.UseVisualStyleBackColor = true;
+            this.buttonform.Click += new System.EventHandler(this.buttonform_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(286, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 19);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Dias de la semana:";
+            // 
             // diasemana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(349, 358);
+            this.ClientSize = new System.Drawing.Size(452, 358);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonform);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -177,5 +204,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonform;
+        private System.Windows.Forms.Label label4;
     }
 }

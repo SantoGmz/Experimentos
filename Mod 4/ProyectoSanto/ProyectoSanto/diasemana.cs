@@ -62,7 +62,33 @@ namespace ProyectoSanto
 
         private void bntver_Click(object sender, EventArgs e)
         {
+            //var resultado = String.IsNullOrWhiteSpace("sdsadffsda");
+
+            if(String.IsNullOrWhiteSpace(textBoxdia.Text))
+            {
+                MessageBox.Show("Digite un numero");
+                return;
+            }
+
             byte dia = Convert.ToByte(textBoxdia.Text);
+            
+
+            if (dia <=0 || dia >8 )
+            {
+                MessageBox.Show("Dia no valido.");
+                return;
+            };
+
+            string[] dias = {"Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Dominles"}; 
+            
+            for (int i = 0; i < 7; i++)
+            {
+                MessageBox.Show(dias[dia]);
+            }
+                return; 
+
+            
+
             /*
             if (dia == 1)
             {MessageBox.Show("Domingo");}
@@ -77,7 +103,7 @@ namespace ProyectoSanto
                 MessageBox.Show("Dia invalido");
             }
 
-            */
+            
 
             switch(dia){
                 case 1:
@@ -104,8 +130,8 @@ namespace ProyectoSanto
                 default:
                  mostrarMensaje("Dia Invalido");
                     break;
-
-            }
+            */
+            
                
             
             /*
@@ -173,6 +199,28 @@ namespace ProyectoSanto
                 MessageBox.Show("Sexo desconocido");
             }*/
 
+        }
+
+        private void buttonform_Click(object sender, EventArgs e)
+        {
+            
+            string[] dia = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+
+            for (int i = 0; i < 7; i++ )
+            {
+                label4.Text += "\n"+ dia[i];
+            };
+            
+
+
+            /*
+            for (int i = 0; i < 7; i++)
+            {
+                string[] dia = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+
+                label4.Text += "\n" + dia[i];
+            };
+            */
         }
         
         }
