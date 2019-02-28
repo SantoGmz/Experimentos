@@ -38,6 +38,7 @@
             // 
             // btncal
             // 
+            this.btncal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncal.ForeColor = System.Drawing.Color.White;
             this.btncal.Location = new System.Drawing.Point(97, 109);
@@ -52,6 +53,7 @@
             // btnseman
             // 
             this.btnseman.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnseman.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnseman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnseman.ForeColor = System.Drawing.Color.White;
             this.btnseman.Location = new System.Drawing.Point(97, 151);
@@ -66,6 +68,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(97, 193);
@@ -79,6 +82,7 @@
             // buttonCiclos
             // 
             this.buttonCiclos.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCiclos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCiclos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCiclos.ForeColor = System.Drawing.Color.White;
             this.buttonCiclos.Location = new System.Drawing.Point(97, 240);
@@ -91,6 +95,7 @@
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(97, 70);
@@ -104,11 +109,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(335, -8);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(332, -6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 24);
+            this.label1.Size = new System.Drawing.Size(22, 26);
             this.label1.TabIndex = 5;
             this.label1.Text = "x";
             this.label1.Click += new System.EventHandler(this.label1_Click);
