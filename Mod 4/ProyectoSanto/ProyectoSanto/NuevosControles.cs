@@ -77,5 +77,21 @@ namespace ProyectoSanto
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            progressBar1.Increment(10);
+            label4.Text = progressBar1.Value.ToString() + "%";
+
+            if (progressBar1.Value == progressBar1.Maximum) 
+            {
+                MessageBox.Show("Hola");
+            }
+        }
     }
 }
