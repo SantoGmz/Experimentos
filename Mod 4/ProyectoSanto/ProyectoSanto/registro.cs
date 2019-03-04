@@ -58,10 +58,11 @@ namespace ProyectoSanto
             var genero2 = rbsexomujer.Text;
 
 
-
+            //Agregar los datos al ListView
             ListViewItem Columna = new ListViewItem();
 
-            Columna.SubItems.Add(nombre);
+            Columna.Text = nombre;
+            //Columna.SubItems.Add(nombre);
             Columna.SubItems.Add(apellido);
             Columna.SubItems.Add(Correo);
             Columna.SubItems.Add(Fecha.ToString());

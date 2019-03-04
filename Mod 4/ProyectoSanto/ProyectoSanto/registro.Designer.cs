@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registro));
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "Santo",
             "Severino",
             "mr.sansan777@gmail.com"}, -1);
@@ -251,6 +251,10 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Estados unidos ",
+            "Cuba ",
+            "Russia"});
             this.comboBox1.Location = new System.Drawing.Point(36, 470);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -270,6 +274,10 @@
             // comboBoxestado
             // 
             this.comboBoxestado.FormattingEnabled = true;
+            this.comboBoxestado.Items.AddRange(new object[] {
+            "Jaja",
+            "Jeje",
+            "Jiji"});
             this.comboBoxestado.Location = new System.Drawing.Point(36, 515);
             this.comboBoxestado.Name = "comboBoxestado";
             this.comboBoxestado.Size = new System.Drawing.Size(121, 21);
@@ -332,7 +340,7 @@
             this.columnHeader9});
             this.listView1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem1});
             this.listView1.Location = new System.Drawing.Point(311, 0);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(543, 600);
