@@ -93,5 +93,65 @@ namespace ProyectoSanto
                 MessageBox.Show("Hola");
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           // comboBox1.Items.Add("A");
+            int indice = comboBox1.SelectedIndex;
+            label9.Text = indice.ToString();
+
+        }
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(comboBox1.SelectedItem.ToString());
+        }
+
+        private void tabPage7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnagregar_Click(object sender, EventArgs e)
+        {
+            //Guardar una varible
+            string texto = txtitem.Text;
+            
+            //Agregar el texto al ListBox
+            checkedListBox1.Items.Add(texto);
+
+            //Agregar al listBox
+            listBox1.Items.Add(texto);
+        }
+
+        private void txtitem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

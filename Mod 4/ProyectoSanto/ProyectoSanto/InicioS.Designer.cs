@@ -141,6 +141,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "InicioS";
             this.Text = "Inicie sesion";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.InicioS_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

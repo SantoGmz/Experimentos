@@ -27,5 +27,42 @@ namespace ProyectoSanto
         {
 
         }
+
+        private void buttonsave_Click(object sender, EventArgs e)
+        {
+            //Almacenamiento de varibles//
+            //Nombre
+            string nombre = textBoxnombre.Text;
+            //apellido
+            string apellido = textBoxapellido.Text;
+            //Correo
+            string Correo = textBoxcorreo.Text;
+            //fecha
+            string Fecha = dateTimePicker1.Value.ToString();
+            //Nombre de usuario
+            string usuario = textBoxuser.Text;
+            //Contraseña
+            string passwd = textBoxpasswd.Text; 
+            //Repeticion de contraseña
+            string passwd2 = textBoxpasswd2.Text;
+            //pais 
+            int pais = comboBox1.SelectedIndex;
+            //estado
+            var estado = comboBoxestado.SelectedIndex;
+            //terminos
+            var terminos = Convert.ToBoolean(checkBoxterminos.Text);
+            //sexo M
+            var genero = rbsexohombre.Text;
+            //sexo F
+            var genero2 = rbsexomujer.Text;
+
+
+
+            listView1.Columns[1].
+
+
+
+
+        }
     }
 }

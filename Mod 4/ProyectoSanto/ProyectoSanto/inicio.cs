@@ -65,5 +65,10 @@ namespace ProyectoSanto
         {
             new NuevosControles().Show();
         }
+
+        private void inicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

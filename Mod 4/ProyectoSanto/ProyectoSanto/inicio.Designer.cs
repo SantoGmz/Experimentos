@@ -157,6 +157,7 @@
             this.Text = "inicio";
             this.TransparencyKey = System.Drawing.Color.Red;
             this.Deactivate += new System.EventHandler(this.inicio_Deactivate);
+            this.Load += new System.EventHandler(this.inicio_Load);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.inicio_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
