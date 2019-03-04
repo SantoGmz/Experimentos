@@ -55,7 +55,7 @@ namespace ProyectoSanto
             //sexo M
             var genero = rbsexohombre.Checked;
             //sexo F
-            var genero2 = rbsexomujer.Text;
+            var genero2 = rbsexomujer.Checked;
 
 
             //Agregar los datos al ListView

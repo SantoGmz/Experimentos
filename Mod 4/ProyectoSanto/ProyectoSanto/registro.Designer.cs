@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registro));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Santo",
-            "Severino",
-            "mr.sansan777@gmail.com"}, -1);
             this.lblnombre = new System.Windows.Forms.Label();
             this.lblapellido = new System.Windows.Forms.Label();
             this.lblfecha = new System.Windows.Forms.Label();
@@ -339,8 +335,6 @@
             this.columnHeader8,
             this.columnHeader9});
             this.listView1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
             this.listView1.Location = new System.Drawing.Point(311, 0);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(543, 600);
