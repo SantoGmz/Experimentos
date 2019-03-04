@@ -31,6 +31,7 @@ namespace ProyectoSanto
         private void buttonsave_Click(object sender, EventArgs e)
         {
             //Almacenamiento de varibles//
+
             //Nombre
             string nombre = textBoxnombre.Text;
             //apellido
@@ -50,15 +51,29 @@ namespace ProyectoSanto
             //estado
             var estado = comboBoxestado.SelectedIndex;
             //terminos
-            var terminos = Convert.ToBoolean(checkBoxterminos.Text);
+            var terminos = Convert.ToBoolean(checkBoxterminos.Checked);
             //sexo M
-            var genero = rbsexohombre.Text;
+            var genero = rbsexohombre.Checked;
             //sexo F
             var genero2 = rbsexomujer.Text;
 
 
 
-            listView1.Columns[1].
+            ListViewItem Columna = new ListViewItem();
+
+            Columna.SubItems.Add(nombre);
+            Columna.SubItems.Add(apellido);
+            Columna.SubItems.Add(Correo);
+            Columna.SubItems.Add(Fecha.ToString());
+            Columna.SubItems.Add(usuario);
+            Columna.SubItems.Add(passwd);
+            Columna.SubItems.Add(pais.ToString());
+            Columna.SubItems.Add(estado.ToString());
+            Columna.SubItems.Add(rbsexohombre.ToString());
+            Columna.SubItems.Add(passwd);
+
+            //agregar la colimna al ListView
+            listView1.Items.Add(Columna);
 
 
 

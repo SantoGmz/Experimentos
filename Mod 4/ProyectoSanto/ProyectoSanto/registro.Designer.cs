@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registro));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Santo",
             "Severino",
             "mr.sansan777@gmail.com"}, -1);
@@ -172,6 +172,7 @@
             this.textBoxpasswd.Name = "textBoxpasswd";
             this.textBoxpasswd.Size = new System.Drawing.Size(100, 20);
             this.textBoxpasswd.TabIndex = 11;
+            this.textBoxpasswd.UseSystemPasswordChar = true;
             // 
             // dateTimePicker1
             // 
@@ -197,6 +198,7 @@
             this.textBoxpasswd2.Name = "textBoxpasswd2";
             this.textBoxpasswd2.Size = new System.Drawing.Size(100, 20);
             this.textBoxpasswd2.TabIndex = 14;
+            this.textBoxpasswd2.UseSystemPasswordChar = true;
             // 
             // lblgenero
             // 
@@ -330,7 +332,7 @@
             this.columnHeader9});
             this.listView1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.listView1.Location = new System.Drawing.Point(311, 0);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(543, 600);
