@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ProyectoSanto
 {
@@ -30,7 +31,11 @@ namespace ProyectoSanto
 
         private void buttonsave_Click(object sender, EventArgs e)
         {
-            //Almacenamiento de varibles//
+
+            //Contraseña
+            //c8d15eeba0a0
+
+            //Almacenamiento de variables//
 
             //Nombre
             string nombre = textBoxnombre.Text;
@@ -57,7 +62,102 @@ namespace ProyectoSanto
             //sexo F
             var genero2 = rbsexomujer.Checked;
 
+            /*
+                Validaciones
+             * Que no esten vacios textBoxnombre.Text  textBoxcorreo.Text
+             *  textBoxapellido.Text
+             * 
+            */
+            //validacion de nombre
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                MessageBox.Show("Tienes que ingresar tu nombre.");
+                return;
+            };
 
+            //validacion de apellido
+            if (string.IsNullOrWhiteSpace(apellido))
+            {
+                MessageBox.Show("Tienes que ingresar tu apellido.");
+                return;
+            };
+            //validacion de correo
+            if (string.IsNullOrWhiteSpace(Correo))
+            {
+                MessageBox.Show("Tienes que ingresar tu Correo.");
+                return;
+            };
+            //validacion de fecha
+            if (string.IsNullOrWhiteSpace(Fecha))
+            {
+                MessageBox.Show("Tienes que ingresar tu fecha de nacimiento.");
+                return;
+            };
+            //validacion de usuario
+            if (string.IsNullOrWhiteSpace(usuario))
+            {
+                MessageBox.Show("Tienes que ingresar tu nombre de usuario.");
+                return;
+                ////Confirmacion de contraseñas
+
+            };
+            ///Selecion de genero
+            if(rbsexohombre.Checked ==false && rbsexomujer.Checked == false)
+            {
+                MessageBox.Show("Debes seleccionar un genero");
+            };
+
+            ///contraseña diferente
+            if (passwd != passwd2)
+            {
+                MessageBox.Show("Las contraseñas no coinciden");
+                return;
+            };
+
+            //validacion de contraseña1
+            if (string.IsNullOrWhiteSpace(passwd))
+            {
+                MessageBox.Show("Tienes que ingresar tu contraseña.");
+                return;
+            };
+
+
+            //validacion de contraseña2
+            if (string.IsNullOrWhiteSpace(passwd2))
+            {
+                MessageBox.Show("Tienes que ingresar tu contraseña.");
+                return;
+            };
+
+             //seleccion del pais
+            if (comboBox1.SelectedIndex < 0)
+            {
+                MessageBox.Show("Debes seleccionar un pais");
+                return;
+            }
+
+            //estado
+                if (comboBoxestado.SelectedIndex < 0)
+            {
+                MessageBox.Show("Debes seleccionar un estado");
+                return;
+            }
+            /*
+              if(rbsexohombre.Checked ==false && rbsexomujer.Checked == false)
+            {
+                MessageBox.Show("Debes seleccionar un genero");
+            };
+
+            */
+
+               if (checkBoxterminos.Checked == false)
+            {
+                MessageBox.Show("Debes aceptar los terminos");
+            };
+
+
+
+            
             //Agregar los datos al ListView
             ListViewItem Columna = new ListViewItem();
 
@@ -79,6 +179,64 @@ namespace ProyectoSanto
 
 
 
+        }
+
+        private void buttonclear_Click(object sender, EventArgs e)
+        {
+            textBoxnombre.Clear();
+            textBoxapellido.Clear();
+            textBoxcorreo.Clear();
+            textBoxuser.Clear();
+            textBoxpasswd.Clear();
+            textBoxpasswd2.Clear();
+            comboBox1.Text = "--Seleccione una opcion--";
+            comboBoxestado.Text = "--Seleccione una opcion--";
+            rbsexomujer.Checked=false;
+            rbsexohombre.Checked = false;
+            checkBoxterminos.Checked = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Conexion a base de datos
+        }
+
+        private void mostrarusuarios_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var string_conexion = "server=localhost; user id=santo; password=c8d15eeba0a0; database=registro_user";
+                var conexion = new MySqlConnection(string_conexion);
+                conexion.Open();
+
+                var sql = "SELECT * FROM register";
+                seleccionarDatos(sql, conexion);
+
+            } catch(MySqlException error)
+            {
+                MessageBox.Show("No se ha podido establecer conexion \n \n" + error.Message);
+            }
+        }
+
+        private void seleccionarDatos(string sql, MySqlConnection conexion)
+        {
+            try
+            {
+                var adaptador = new MySqlDataAdapter(sql, conexion);
+
+                var datos = new DataSet();
+                adaptador.Fill(datos);
+
+                dataGridView1.DataSource = datos.Tables[0];
+            } catch(MySqlException error)
+            {
+                MessageBox.Show("Ha ocurrido un error en el select: \n \n " + error.Message);
+            }
         }
     }
 }

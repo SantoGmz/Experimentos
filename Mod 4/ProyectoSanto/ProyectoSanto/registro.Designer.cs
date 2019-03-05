@@ -64,7 +64,10 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mostrarusuarios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblnombre
@@ -158,6 +161,7 @@
             // textBoxuser
             // 
             this.textBoxuser.Location = new System.Drawing.Point(35, 255);
+            this.textBoxuser.MaxLength = 9;
             this.textBoxuser.Name = "textBoxuser";
             this.textBoxuser.Size = new System.Drawing.Size(100, 20);
             this.textBoxuser.TabIndex = 10;
@@ -172,6 +176,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.DarkRed;
             this.dateTimePicker1.Location = new System.Drawing.Point(35, 206);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
@@ -309,6 +314,7 @@
             this.buttonclear.TabIndex = 24;
             this.buttonclear.Text = "Limpiar";
             this.buttonclear.UseVisualStyleBackColor = true;
+            this.buttonclear.Click += new System.EventHandler(this.buttonclear_Click);
             // 
             // pictureBox1
             // 
@@ -337,7 +343,7 @@
             this.listView1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.listView1.Location = new System.Drawing.Point(311, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(543, 600);
+            this.listView1.Size = new System.Drawing.Size(543, 200);
             this.listView1.TabIndex = 28;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -386,13 +392,34 @@
             this.columnHeader9.Text = "Estado";
             this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(311, 207);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(543, 406);
+            this.dataGridView1.TabIndex = 30;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // mostrarusuarios
+            // 
+            this.mostrarusuarios.Location = new System.Drawing.Point(198, 569);
+            this.mostrarusuarios.Name = "mostrarusuarios";
+            this.mostrarusuarios.Size = new System.Drawing.Size(75, 23);
+            this.mostrarusuarios.TabIndex = 31;
+            this.mostrarusuarios.Text = "Mostrar";
+            this.mostrarusuarios.UseVisualStyleBackColor = true;
+            this.mostrarusuarios.Click += new System.EventHandler(this.mostrarusuarios_Click);
+            // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(854, 596);
+            this.ClientSize = new System.Drawing.Size(854, 625);
+            this.Controls.Add(this.mostrarusuarios);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.buttonclear);
             this.Controls.Add(this.buttonsave);
@@ -426,6 +453,7 @@
             this.Text = "Registrar";
             this.Load += new System.EventHandler(this.registro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,5 +496,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button mostrarusuarios;
     }
 }
