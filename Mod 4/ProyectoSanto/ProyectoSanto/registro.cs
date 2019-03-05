@@ -238,5 +238,12 @@ namespace ProyectoSanto
                 MessageBox.Show("Ha ocurrido un error en el select: \n \n " + error.Message);
             }
         }
+        /*
+        private void insertardatos()
+        {
+            try{
+                var comando = new MySqlCommand(sql, conexion);
+            }catch(MySqlException error)
+        } */
     }
 }

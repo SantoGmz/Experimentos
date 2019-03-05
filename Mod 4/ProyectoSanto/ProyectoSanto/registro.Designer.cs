@@ -340,10 +340,10 @@
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader9});
-            this.listView1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.listView1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.listView1.Location = new System.Drawing.Point(311, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(543, 200);
+            this.listView1.Size = new System.Drawing.Size(543, 304);
             this.listView1.TabIndex = 28;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -394,10 +394,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Azure;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(311, 207);
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView1.Location = new System.Drawing.Point(311, 307);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 406);
+            this.dataGridView1.Size = new System.Drawing.Size(543, 319);
             this.dataGridView1.TabIndex = 30;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
