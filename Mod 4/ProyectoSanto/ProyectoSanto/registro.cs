@@ -68,6 +68,8 @@ namespace ProyectoSanto
              *  textBoxapellido.Text
              * 
             */
+
+/*
             //validacion de nombre
             if (string.IsNullOrWhiteSpace(nombre))
             {
@@ -148,14 +150,14 @@ namespace ProyectoSanto
                 MessageBox.Show("Debes seleccionar un genero");
             };
 
-            */
+          
 
                if (checkBoxterminos.Checked == false)
             {
                 MessageBox.Show("Debes aceptar los terminos");
             };
 
-
+    */
 
             
             //Agregar los datos al ListView
@@ -176,14 +178,22 @@ namespace ProyectoSanto
             //agregar la columna al ListView
             listView1.Items.Add(Columna);
 
-
+            /*
             var string_conexion = "server=localhost; user id=s4n70; password=wJ3RR9noH6PHrexS; database=registeruser";
             var conexion = new MySqlConnection(string_conexion);
 
             conexion.Open();
             var sql = "INSERT INTO usuario(id, nombre, apellido, usuario) VALUES(1, '"+nombre+"', '"+apellido+"', '"+usuario+"' )";
             insertardatos(sql, conexion); 
+            */
 
+
+            //Guardar en la base de datos
+
+           // var sql = "INSERT INTO formulario (ID, Nombre, Apellido, fechan, Correo, Usuario,passwd, Genero, Pais, Estado)VALUES(1, "Santo", "Gmz", "1999/9/11", "mr.sansan777@gmail.com", "S4N70", 123456, "M", "Republica Dominina", "Jaja");";
+            //var sql = "INSERT INTO formulario (ID, Nombre, Apellido, fechan, Correo, Usuario,passwd, Genero, Pais, Estado)VALUES('"+nombre+"')";
+            var sql = "INSERT INTO formulario (ID, Nombre, Apellido, fechan, Correo, Usuario,passwd, Genero, Pais, Estado)VALUES( \"nombre\", \"apellido\");";
+            System.Diagnostics.Trace.WriteLine(sql);
         }
 
         private void buttonclear_Click(object sender, EventArgs e)
