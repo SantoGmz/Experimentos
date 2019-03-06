@@ -192,8 +192,14 @@ namespace ProyectoSanto
 
            // var sql = "INSERT INTO formulario (ID, Nombre, Apellido, fechan, Correo, Usuario,passwd, Genero, Pais, Estado)VALUES(1, "Santo", "Gmz", "1999/9/11", "mr.sansan777@gmail.com", "S4N70", 123456, "M", "Republica Dominina", "Jaja");";
             //var sql = "INSERT INTO formulario (ID, Nombre, Apellido, fechan, Correo, Usuario,passwd, Genero, Pais, Estado)VALUES('"+nombre+"')";
-            var sql = "INSERT INTO formulario (ID, Nombre, Apellido, fechan, Correo, Usuario,passwd, Genero, Pais, Estado)VALUES( \"nombre\", \"apellido\");";
-            System.Diagnostics.Trace.WriteLine(sql);
+            var sql = "INSERT INTO formulario (Nombre, Apellido, fechan, Correo, Usuario,passwd, Genero, Pais, Estado)VALUES( \"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\", \"{5}\", \"{6}\", \"{7}\", \"{8}\")";
+           var query = String.Format(sql,nombre,apellido,Correo, Fecha, usuario,passwd,pais,estado,genero );
+
+           var string_conexion = "server=localhost; user id=s4n70; password=; database=registeruser"; 
+           var conexion = new MySqlConnection(string_conexion);
+           conexion.Open();
+
+           insertardatos(query, conexion);
         }
 
         private void buttonclear_Click(object sender, EventArgs e)
@@ -235,7 +241,7 @@ namespace ProyectoSanto
 
                
 
-                var sql = "SELECT * FROM formulario";
+                var sql = "SELECT nombre,apellido, correo, usuario, passwd, estado,genero FROM formulario";
                 seleccionarDatos(sql, conexion);
 
             } catch(MySqlException error)
