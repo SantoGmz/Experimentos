@@ -173,11 +173,16 @@ namespace ProyectoSanto
             Columna.SubItems.Add(rbsexohombre.ToString());
             Columna.SubItems.Add(passwd);
 
-            //agregar la colimna al ListView
+            //agregar la columna al ListView
             listView1.Items.Add(Columna);
 
 
+            var string_conexion = "server=localhost; user id=s4n70; password=wJ3RR9noH6PHrexS; database=registeruser";
+            var conexion = new MySqlConnection(string_conexion);
 
+            conexion.Open();
+            var sql = "INSERT INTO usuario(id, nombre, apellido, usuario) VALUES(1, '"+nombre+"', '"+apellido+"', '"+usuario+"' )";
+            insertardatos(sql, conexion); 
 
         }
 
@@ -210,11 +215,17 @@ namespace ProyectoSanto
         {
             try
             {
-                var string_conexion = "server=localhost; user id=santo; password=c8d15eeba0a0; database=registro_user";
+                var string_conexion = "server=localhost; user id=s4n70; password=; database=registeruser";
                 var conexion = new MySqlConnection(string_conexion);
+
                 conexion.Open();
 
-                var sql = "SELECT * FROM register";
+
+                // string nombre, apellido, usuario;
+
+               
+
+                var sql = "SELECT * FROM formulario";
                 seleccionarDatos(sql, conexion);
 
             } catch(MySqlException error)
@@ -238,12 +249,36 @@ namespace ProyectoSanto
                 MessageBox.Show("Ha ocurrido un error en el select: \n \n " + error.Message);
             }
         }
-        /*
-        private void insertardatos()
+        
+        private void insertardatos(String sql, MySqlConnection conexion)
         {
             try{
                 var comando = new MySqlCommand(sql, conexion);
+                var insertado = comando.ExecuteNonQuery();
+                if(insertado > 0)
+                {
+                    MessageBox.Show("Datos insertados");
+                }
             }catch(MySqlException error)
-        } */
+            {
+                MessageBox.Show("Error en el insert: \n \n" + error.Message);
+            }
+        } 
+
+        //borrar datos
+        private void borrarDatos(String sql, MySqlConnection conexion)
+        {
+
+        }
+
+        //Actualizar
+        private void ActualizarDatos(string sql, MySqlConnection conexion)
+        {
+
+        }
+    
+
+    
     }
+
 }
